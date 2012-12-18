@@ -1,0 +1,23 @@
+syntax: glob
+*.pyc
+*.pyo
+*.pyc
+*.o
+*.so
+*~
+*.rej
+*.orig
+*.mo
+
+.figleaf*
+*.egg-info
+*.egg
+build
+deps
+local_settings.py
+.build
+dist
+pip-log.txt
+
+syntax: regexp
+(.*/)?\#[^/]*\#$

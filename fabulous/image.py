@@ -92,7 +92,7 @@ class Image(object):
         (iw, ih) = self.size
         if width is None:
             width = min(iw, utils.term.width)
-        elif isinstance(width, basestring):
+        elif isinstance(width, str):
             percents = dict([(pct, '%s%%' % (pct)) for pct in range(101)])
             width = percents[width]
         height = int(float(ih) * (float(width) / float(iw)))
@@ -141,8 +141,8 @@ class Image(object):
         (width, height) = self.img.size
         bgcolor = utils.term.bgcolor
         self.img.load()
-        for y in xrange(height):
-            for x in xrange(width):
+        for y in range(height):
+            for x in range(width):
                 rgba = self.img.getpixel((x, y))
                 if len(rgba) == 4 and rgba[3] == 0:
                     yield None
@@ -161,7 +161,7 @@ def main(args):
     """
     for imgpath in args:
         for line in Image(imgpath):
-            print line
+            print(line)
 
 
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 # http://packages.python.org/distribute/setuptools.html
 # http://diveintopython3.org/packaging.html

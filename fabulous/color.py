@@ -12,7 +12,7 @@ import functools
 
 from fabulous import utils, xterm256
 
-import grapefruit
+import fabulous.grapefruit as grapefruit
 
 
 OVERLINE = '\u203e'

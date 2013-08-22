@@ -7,7 +7,7 @@
 import sys
 import itertools
 
-import grapefruit as gf
+import fabulous.grapefruit as gf
 
 from fabulous import utils, xterm256
 

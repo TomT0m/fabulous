@@ -12,7 +12,7 @@ import termios
 import textwrap
 import functools
 
-import grapefruit
+import fabulous.grapefruit as grapefruit
 
 
 def memoize(function):

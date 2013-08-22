@@ -43,7 +43,7 @@
 import os
 import sys
 
-import grapefruit
+import fabulous.grapefruit as grapefruit
 
 from fabulous import utils, image
 
